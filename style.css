@@ -145,6 +145,13 @@ button {
     transition: background-color 0.2s, transform 0.2s ease;
 }
 
+#subscribeButton:disabled {
+    color: #ffffff !important;
+    background-color: #a8a8b2 !important;
+    cursor: not-allowed;
+    transform: none !important; /* 마우스를 올려도 찌그러지지 않게 방지 */
+}
+
 input,
 button {
     font: inherit;
@@ -232,9 +239,4 @@ button:active {
         font-weight: 700;
     }
 
-    #subscribeButton:disabled {
-        color: #ffffff;
-        background-color: #a8a8b2;
-        cursor: not-allowed;
-    } 
 }
